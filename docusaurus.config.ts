@@ -89,12 +89,12 @@ const config: Config = {
           label: 'Artikel',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/impressum', label: 'Impressum', position: 'left'},
-        /*{
+        {to: '/impressum', label: 'Impressum', position: 'right'},
+        {
           href: 'https://github.com/bierhals',
           label: 'GitHub',
           position: 'right',
-        },*/
+        },
       ],
     },
     footer: {
