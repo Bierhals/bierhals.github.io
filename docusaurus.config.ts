@@ -41,27 +41,14 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/bierhals/bierhals.github.io/blob/main',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/bierhals/bierhals.github.io/blob/main',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -82,13 +69,6 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'artikelSidebar',
-          position: 'left',
-          label: 'Artikel',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/impressum', label: 'Impressum', position: 'right'},
         {
           href: 'https://github.com/bierhals',
